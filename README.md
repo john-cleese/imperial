@@ -8,6 +8,7 @@ A proposta � criar um site com o conteudo do livro "O cozinheiro imperial" de 
 ## Ferramentas utilizadas e seus arquivos, se tiver.
 As versoes utilizadas estao no Poetry.
 - [Python](https://www.python.org/) Linguagem de programç�o
+- [django-environ](https://django-environ.readthedocs.io) Gerencia .envs no Django 
 - [Poetry](https://python-poetry.org/) Python packaging and dependency management
   - poetry.lock
   - pyproject.toml
