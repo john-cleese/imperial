@@ -22,3 +22,9 @@ As versoes utilizadas estao no Poetry.
 
 ## Instalacao do ambiente de desenvolvimento
 
+1. Instale o Just, Docker e Poetry.
+2. `$ just build`
+
+## Subir o servidor
+1. Certifique-se de que o dockerd esteja rodando
+2. `$ just up` 

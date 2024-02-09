@@ -1,7 +1,6 @@
-set shell := ["fish", "-c"]
-# Testa o just
-hello:
-  echo "Hello, world!"
+# Lista os comandos quando executar sem argumentos
+default:
+  just --list
 
 # Cria a imagem docker
 build:
