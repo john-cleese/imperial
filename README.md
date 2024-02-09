@@ -19,6 +19,8 @@ As versoes utilizadas estao no Poetry.
   - compose/start
 - [Just](https://just.systems/) Usado para encapsular comandos
   - justfile
+- [django-extensions](https://django-extensions.readthedocs.io/en/latest/) Contem commandos e ferramentas para auxiliar no desenvolvimento 
+
 
 
 ## Instalacao do ambiente de desenvolvimento
