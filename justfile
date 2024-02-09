@@ -13,3 +13,7 @@ runserver:
 # Roda o comando manage.py dentro do containert
 mng command:
   docker compose run --rm web python manage.py {{command}}
+
+# Entra no console do container web
+sh:
+  docker compose run --rm web sh
