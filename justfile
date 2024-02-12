@@ -22,3 +22,7 @@ sh:
 ruff:
   docker compose run --rm web ruff check --fix
   docker compose run --rm web ruff format
+# Roda um comando no container
+
+check:
+  docker compose run --rm web ruff check
