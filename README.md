@@ -37,4 +37,4 @@ As versoes utilizadas estao no Poetry.
 1. Certifique-se de que o dockerd esteja rodando
 2. `$ just up` 
 
-O servidor ja sobe o runserver do Django na porta 8000 e o Marino na porta 2718
+O servidor ja sobe o runserver do Django na porta 8000 e o Marimo na porta 2718
