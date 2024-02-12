@@ -21,6 +21,11 @@ As versoes utilizadas estao no Poetry.
   - justfile
 - [django-extensions](https://django-extensions.readthedocs.io/en/latest/) Contem commandos e ferramentas para auxiliar no desenvolvimento 
 
+### ...de desenvolvimento
+- [Marimo](https://marimo.io/) Notebook utilizado para desenvolver algoritmos, testar, debugar e etc.  
+  - extras/local - Esta no .gitignore, para notebooks pessoais
+  - extras/template_marimo.py - Template para criar um novo notebook.
+
 
 
 ## Instalacao do ambiente de desenvolvimento
@@ -31,3 +36,5 @@ As versoes utilizadas estao no Poetry.
 ## Subir o servidor
 1. Certifique-se de que o dockerd esteja rodando
 2. `$ just up` 
+
+O servidor ja sobe o runserver do Django na porta 8000 e o Marino na porta 2718
