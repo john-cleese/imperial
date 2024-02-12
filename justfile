@@ -10,10 +10,15 @@ build:
 runserver:
   docker compose up --build
 
-# Roda o comando manage.py dentro do containert
+# Roda o comando manage.py dentro do container
 mng command:
   docker compose run --rm web python manage.py {{command}}
 
 # Entra no console do container web
 sh:
   docker compose run --rm web sh
+
+# Roda um comando no container
+ruff:
+  docker compose run --rm web ruff check --fix
+  docker compose run --rm web ruff format

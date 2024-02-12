@@ -14,7 +14,12 @@ django-extensions = "^3.2.3"
 
 [tool.poetry.group.dev.dependencies]
 marimo = "^0.2.4"
+ruff = "^0.2.1"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+# Set the maximum line length to 120.
+line-length = 120
