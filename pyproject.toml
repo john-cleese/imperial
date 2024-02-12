@@ -31,3 +31,6 @@ select = [
     # pycodestyle
     "E",
 ]
+
+[tool.ruff.format]
+quote-style = "single"
