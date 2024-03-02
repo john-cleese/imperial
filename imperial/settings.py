@@ -48,16 +48,19 @@ INTERNAL_IPS = [
     '127.0.0.1',
 ]
 
+
+# Django debug toolbars
+# https://django-debug-toolbar.readthedocs.io/en/latest/tips.html
 def show_toolbar(request):
     return True
 
-DEBUG_TOOLBAR_CONFIG = {
-    "SHOW_TOOLBAR_CALLBACK" : show_toolbar,
-}
+
+DEBUG_TOOLBAR_CONFIG = {'SHOW_TOOLBAR_CALLBACK': show_toolbar, 'SHOW_COLLAPSED': True}
 
 if DEBUG:
     import mimetypes
-    mimetypes.add_type("application/javascript", ".js", True)
+
+    mimetypes.add_type('application/javascript', '.js', True)
 
 MIDDLEWARE = [
     'debug_toolbar.middleware.DebugToolbarMiddleware',
