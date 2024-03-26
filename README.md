@@ -21,6 +21,9 @@ As versoes utilizadas estao no Poetry.
 - [Just](https://just.systems/) Usado para encapsular comandos
   - justfile
 - [django-extensions](https://django-extensions.readthedocs.io/en/latest/) Contem commandos e ferramentas para auxiliar no desenvolvimento
+- [Whitenoise](https://whitenoise.readthedocs.io/en/stable/django.html) Usado para gerenciar arquivos estaticos, neste caso, somente servir pelo django 
+- [Pytest](https://docs.pytest.org/en/8.0.x/) Conjunto de ferramentas para testes. 
+- [Pytest-django](https://pytest-django.readthedocs.io/en/latest/) Plugin do Pytest para o Django 
 
 ### ...de desenvolvimento
 
@@ -30,8 +33,9 @@ As versoes utilizadas estao no Poetry.
 
 ## Instalacao do ambiente de desenvolvimento
 
-1. Instale o Just, Docker e Poetry.
-2. `$ just build`
+1. Instale o Just, Docker e Poetry(opcional).
+2. Copie o .env.example para .env, nao precisa alterar
+3. `$ just build`
 
 ## Subir o servidor
 
