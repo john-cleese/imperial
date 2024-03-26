@@ -10,12 +10,14 @@ python = "^3.11"
 Django = "^5.0.2"
 django-environ = "^0.11.2"
 django-extensions = "^3.2.3"
+whitenoise = { extras = ["brotli"], version = "^6.6.0" }
 
 
 [tool.poetry.group.dev.dependencies]
 marimo = "^0.2.4"
 ruff = "^0.2.1"
 django-debug-toolbar = "^4.3.0"
+pytest-django = "^4.8.0"
 
 [build-system]
 requires = ["poetry-core"]
@@ -35,3 +37,13 @@ select = [
 
 [tool.ruff.format]
 quote-style = "single"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "imperial.settings"
+markers = [
+    'models: test the models',
+    'views: test all views'
+]
+
+# -- recommended but optional:
+python_files = ["test_*.py", "*_test.py", "testing/python/*.py"]
